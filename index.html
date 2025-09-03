@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/ekmas/cs16.css@main/css/cs16.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho</title>
+</head>
+<body>
+    <main>
+        <h1 class="h1-titulo_principal"> Base </h1>
+        <section class="section-conteiner">
+             <!-- nos inputs tem  o required que fez com que ele seja obrigatorio isso é no vasio-->
+             <!-- usei o input submit para usar o evento submit no javascript -->
+              <!-- e usei  o o input btn para remover para usar o evento click no javascript-->
+            <form  id="formulario" class="form-conteiner">
+                <input type="text" name="nome" id="nome" class="cs-input" required>
+                <input type="submit" value="Add" class="cs-btn btn" >
+                <input type="button" value="Remover" class="cs-btn btn" id="remover">
+            </form>
+            <section class="section-conteiner-tabela">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>
+                                Nome
+                            </th>
+                        </tr>
+                        <tbody id="tela">
+                           
+                        </tbody>          
+                    </thead>
+                </table>
+            </section>
+        </section>
+    </main>
+</body>
+<script src="Js/index.js"></script>
+</html>

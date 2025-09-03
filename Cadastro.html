@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/ekmas/cs16.css@main/css/cs16.min.css">
+    <link rel="stylesheet" href="base.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho - Cadastro </title>
+</head>
+<body>
+    <main>
+        <h1 class="h1-titulo_principal"> Cadastro </h1>
+        <section class="section-conteiner">
+               <!-- nos inputs tem  o required que fez com que ele seja obrigatorio isso é no vasio-->
+                  <!-- e no caso do email tem que possuir o @-->
+                    <!-- fiz isso para poupar codigo no javascript-->
+
+            <form id="formulario" class="form-conteiner">
+                <label for="">Nome</label>
+                <input class="cs-input" type="text" name="nome" id="nome" placeholder="nome" required>
+                
+                <label for="">Email</label>
+                <input  class="cs-input" type="email" name="email" id="email" placeholder="exmplo@exmplo.com" required>
+                
+                <label for="">Senha</label>
+                <input  class="cs-input" type="password" name="senha" id="senha" required>
+
+                <label for="">Confirma senha</label>
+                <input  class="cs-input" type="password" name="senha" id="confirmar_senha" required>
+
+                 <!-- usei o input submit para usar o evento submit no javascript -->
+                <section class="section-btns">
+                    <input  class="cs-btn" type="submit" value="Enviar" id="enviar">
+                </section>
+                <a href="Login.html"> Fazer Login </a>
+            </form>
+        </section>
+    </main>
+</body>
+<script src="Js/cadastro.js"></script>
+</html>
