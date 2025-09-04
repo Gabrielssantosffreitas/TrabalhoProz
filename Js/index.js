@@ -32,7 +32,7 @@ window.document.addEventListener("DOMContentLoaded",()=>{
             alert("esse nome ja existe")
             return
         }
-
+        // -> 
         if(nome == "" || nome == null){
             alert("digite um nome valido")
             return
