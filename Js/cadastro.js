@@ -19,7 +19,8 @@ window.document.addEventListener("DOMContentLoaded",()=>{
         // nao presisa verificar se o confirmar senha e menor que 8 caracteres
         // pois vou verificar se ele e igual a senha  logo ele e maior que 8
         
-        for(let objetoUsuario of arrayListaUsuarios){
+        //  
+        for(objetoUsuario of arrayListaUsuarios) { 
             if(stringEmail === objetoUsuario.email){
                 alert("esse email ja foi cadastrado")
                 return
